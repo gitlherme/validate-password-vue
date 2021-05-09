@@ -28,7 +28,7 @@
       >
       <span :class="hasEspecial ? 'checked' : 'not-checked'"
         ><i :class="hasEspecial ? 'fas fa-check' : 'fas fa-times'"></i>Possui ao
-        menos um caracter especial</span
+        menos um caractere especial</span
       >
     </div>
   </div>
