@@ -1,27 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+  <PasswordValidate />
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HelloWorld from "./components/HelloWorld.vue";
+import { PasswordValidate } from "@/components";
 
 export default defineComponent({
   name: "App",
   components: {
-    HelloWorld,
+    PasswordValidate,
   },
 });
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: rgb(0, 7, 31);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
